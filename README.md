@@ -1,5 +1,5 @@
 # python-spiders
-http://igg-games.com 使用request+beautifulsoup 爬取igggames的游戏列表数据
+http://igg-games.com 使用requests+beautifulsoup 爬取igggames的游戏列表数据
 
 
 
