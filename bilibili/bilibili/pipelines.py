@@ -11,10 +11,3 @@ class BilibiliPipeline(object):
     def process_item(self, item, spider):
         return item
 
-
-# class BilibiliPipeline(object):
-#     def process_item(self, item, spider):
-#         if isinstance(item, VideoItem):
-#
-#         else:
-#             return item

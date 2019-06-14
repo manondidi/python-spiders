@@ -30,10 +30,6 @@ class BilibiliSpider(scrapy.Spider):
             video_item['videoDownUrl'] = ""
             video_item['author'] = author
             video_item['createTime'] = self.convert_time(video.css('.time::text').extract_first())
-            # yield videoItem
-            # yield scrapy.Request(videoItem['videoUrl'].replace('.bilibili.', '.ibilibili.'),
-            #                      callback=self.parseDownloadUrl)
-
             yield scrapy.Request(video_item['videoUrl'].replace('.bilibili.', '.ibilibili.'),
                                  callback=lambda response, video_item=video_item: self.parse_downloadurl(response,
                                                                                                       video_item))
